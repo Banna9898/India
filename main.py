@@ -592,7 +592,7 @@ async def txt_handler(bot: Client, m: Message):
                         cmd = f'yt-dlp -o "{name1}.{ext}" "{url}"'
                         download_cmd = f"{cmd} -R 25 --fragment-retries 25"
                         os.system(download_cmd)
-                        cc3 = f'**🖼️ IMG_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.{ext}\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
+                        cc3 = f'**🖼️ IMG_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.{ext}\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦ASTRONAUT✦━━━━━**'
                         await bot.send_document(chat_id=m.chat.id, document=f'{name}.{ext}', caption=cc3)
                         count += 1
                         os.remove(f'{name}.{ext}')
@@ -607,7 +607,7 @@ async def txt_handler(bot: Client, m: Message):
                         cmd = f'yt-dlp -x --audio-format {ext} -o "{name}.{ext}" "{url}"'
                         download_cmd = f"{cmd} -R 25 --fragment-retries 25"
                         os.system(download_cmd)
-                        cc2 = f'**🎵 MP3_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.{ext}\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
+                        cc2 = f'**🎵 MP3_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.{ext}\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦ASTRONAUT ✦━━━━━**'
                         await bot.send_document(chat_id=m.chat.id, document=f'{name}.{ext}', caption=cc2)
                         count += 1
                         os.remove(f'{name}.{ext}')
@@ -664,7 +664,7 @@ async def txt_handler(bot: Client, m: Message):
                         continue                       
                           
                 else:
-                    Show = f"📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 »\n\n📝 Title:- `{name}\n\n**🔗 𝐓𝐨𝐭𝐚𝐥 𝐔𝐑𝐋 »** ✨{len(links)}✨\n\n⌨ 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 𝗦𝗣𝗜𝗗𝗬"
+                    Show = f"📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 »\n\n📝 Title:- `{name}\n\n**🔗 𝐓𝐨𝐭𝐚𝐥 𝐔𝐑𝐋 »** ✨{len(links)}✨\n\n⌨ 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ ASTRONAUT"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -847,8 +847,8 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\nTitle: {name1} @Spidy_Universe {res}.mkv\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦📖🇮🇳📖✦━━━━━**'
-                cc1 = f'**📁 PDF_ID: {str(count).zfill(3)}.\n\nTitle: {name1} @Spidy_Universe.pdf\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦📖🇮🇳📖✦━━━━━**'
+                cc = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\nTitle: {name1} Astronaut bro {res}.mkv\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}**'
+                cc1 = f'**📁 PDF_ID: {str(count).zfill(3)}.\n\nTitle: {name1} Astronaut bro .pdf\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}**'
                     
                 
                 if "drive" in url:
